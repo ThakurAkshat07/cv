@@ -1,38 +1,121 @@
-<!DOCTYPE HTML>
-<html lan="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- lang describes the lang of webpage ,
+  dir describes the direction of text :
+  ltr means left to right as seen in languages like English,Hindi.
+  rtl means right to left as seen in languages like Urdu.-->
   <head>
+    <!--meta tag is used to describe about the associated data of the webpage.
+    It tells the browser how to handle the webpage.-->
     <meta charset="utf-8">
-    <meta name="description" content="Contact me form ">
-    <meta name="keywords" content="HTML,form,basics">
+    <!-- charset means set of characters. utf-8 is a charset that contains all
+      the possible international symbols and is mostly used in webpages.-->
+
+    <!-- name is an attribute which can contain a variety of associated data
+  about the webpage.
+  a) description: it describes to the user what are the contents of the webpage
+and is seen when the webpage/website is recommended as a search result.
+  b) keywords: the keywords are certain words which are primally related to the
+contents of the webpage/website and can frequently be used in search during browsing.
+  c) author as name suggests describes who is the author of the webpage.-->
+    <meta name="description" content="Port-Folio" >
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT,REACT" >
     <meta name="author" content="Akshat Thakur">
-    <title>Contact Me </title>
+    <title> Personal PortFolio </title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <form class="" action="mailto:akshat9502@gmail.com" method="post" autocomplete="email" target="_parent">
-      <label>Name: </label>
-      <input type="text" name="" value="">
-      <br>
-      <label>Contact No: </label>
-      <input type="number" name="" minlength="10" maxlength="10" min="0" max="9999999999" placeholder="Number must be of 10 digits">
-      <br>
-      <label>Which course are you interested in?</label>
-      <br>
-      <label>Beginner:</label><input type="radio" name="section" >
-      &nbsp
-      <label>Intermediate:</label><input type="radio" name="section">
-      &nbsp
-      <label >Advanced:</label><input type="radio" name="section">
-      <br>
-      <label>Date of Birth: </label>
-      <input type="date" name="" min="2000-01-01" max="2004-01-01" placeholder="03-05-2000">
-      <br>
-      <label>Are you willing to give feedback about our course?</label>
-      <input type="checkbox" name="" value="">
-      <br>
-      <label>Email:</label>
-      <input type="email" name="" value="">
-      <br>
-      <input type="submit" name="" value="submit">
-    </form>
+    <table cellpadding="30" >
+      <tr >
+        <td><img src="my_photo1.png" alt="My picture" width="280"></td>
+        <td>
+          <table>
+            <tr>
+              <td>
+                    <h1>Hello I'm</h1>
+                    <div class="my_name">
+                      <h1>Akshat Thakur</h1>
+                    </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+
+                  <a href="https://mail.google.com/mail/u/0/#inbox"><img src="gmailpic.png" alt="gmail" width="50"></a>
+                  &nbsp&nbsp
+                  <a href="https://github.com/ThakurAkshat07"><img src="gitpic.png" alt="github" width="50"></a>
+                  &nbsp&nbsp
+                  <a href="https://www.linkedin.com/in/akshat-thakur-8a74ab22b/"><img src="linkdinpic.ico" alt="linkdin" width="50"></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <h1>Education:</h1>
+    <table cellpadding="20" >
+      <tr align="center">
+        <th><p >
+          Name of Institute
+        </p></th>
+        <th>Year of Passing/Duration</th>
+        <th>Course</th>
+        <th>CGPA/Percentage</th>
+      </tr>
+      <tr align="center">
+        <td>Netaji Subhas University of Technology</td>
+        <td>2020-2024</td>
+        <td>B.Tech(Information Technology)</td>
+        <td>8.18/10</td>
+      </tr>
+      <tr align="center">
+        <td>Sri Venkateshwar International School</td>
+        <td>2020</td>
+        <td>AISSCE(12th)</td>
+        <td>95.20</td>
+      </tr>
+      <tr align="center">
+        <td>Sri Venkateshwar International School</td>
+        <td>2018</td>
+        <td>AISSCE(10th)</td>
+        <td>94.83</td>
+      </tr>
+    </table>
+    <hr>
+    <h1>SKILLS</h1>
+    <ul type="disc">
+      <li><p> Programming Languages: </p>
+        <ul type="square">
+          <li>C++</li>
+          <li>Javascript</li>
+          <li>Python</li>
+        </ul>
+      </li>
+      <li><p>Front-End Languages:</p>
+        <ul type="square">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+        </ul>
+      </li>
+      <li><p>Back-End Languages:</p>
+        <ul type="square">
+          <li>Node.js</li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
+    <h1>Projects:</h1>
+    <hr>
+    <h1>Achievements:</h1>
+    <ul type="disc">
+      <li><p><strong>4 star</strong> coder at <a href="https://www.codechef.com/users/akshat_coder07" target="_blank"><strong>Codechef</strong></a> with maximum rating of <strong>1922 (311 problems solved)</strong>.</p></li>
+      <li>Solved <strong>232</strong> problems at <a href="https://auth.geeksforgeeks.org/user/akshatcoder07/practice/"><strong>GeeksForGeeks</strong></a> with coding score of <strong>526</strong></li>
+      <li><p>Secured Rank <strong>14</strong> out of 1200+ participants at April Long One 2022(Division 2)</p></li>
+      <li><p>Secured Rank <strong>40</strong> out of 1800+ participants at March Long One 2022(Division 2)</p></li>
+      <li><p>Secured Rank <strong>330</strong> out of 4400+ participants at September Codechef Starters 2021(Division 2)</p></li>
+      <li><p>Secured Rank <strong>174</strong> out of 7700+ participants at June Codechef Starters 2021(Division 3)</p></li>
+    </ul>
   </body>
 </html>
